@@ -48,7 +48,9 @@ int main(int argc, char const *argv[])
 	int num =10;
 	while(num --){//入队
 		queue.push(num);
+		printf("%d->",num);
 	}
+	printf("NULL\n");
 	num = 10;
 	while(!queue.empty()){
 		cout << queue.front()<<"->";

@@ -107,7 +107,7 @@ int main(int argc, char const *argv[])
 	//注意定义完指针要初始化，让它具体的指向一个实体，否则不能乱用他
 
 	aqueue *AQ1;//这里的AQ1是个指针,但是这个指针只是一个指针，并没有初始化让它指向具体的内容
-	AQ1 = (aqueue*)malloc(sizeof(aqueue));
+	AQ1 = (aqueue*)malloc(sizeof(aqueue));//在堆那申请一个aqueue大小的内存，并让一个aqueue类型的指针AQ1指向它
 	AQ1->clear();
 	num = 20;
 	while(num--){

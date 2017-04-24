@@ -3,11 +3,12 @@
 #include <string.h>
 using namespace std;
 
+//单链表的建立，遍历，删除节点，插入节点，对结点排序，对链表进行逆置，查找中间节点，合并链表
+
 typedef struct student{
 	int data;
 	struct student *next;
 }node;
-
 
 
 node *create(){

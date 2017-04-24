@@ -33,12 +33,16 @@ void quick_sort(int *list, int m, int n){
 	}
 }*/
 
+inline void swap(int &a,int &b){
+	int temp;temp=a;a=b;b=temp;
+};
+
 int Partition(int *a, int low, int high);
 void quick_sort(int *a, int low,int high);
 
 int main(int argc, char const *argv[])
 {
-	int list[10]={9,8,7,6,5,4,3,2,1,0};
+	int list[10]={9,8,1,6,5,4,3,2,7,0};
 	int m=0,n=9,i;
 	//printf("请输入十个数：\n");
 	//for(i=0;i<10;i++) scanf("%d",&list[i]);
@@ -57,12 +61,14 @@ int Partition(int *a, int low, int high){
 	for(int j=low;j < high;j++){//遍历下边由low到high-1的数
 		if(a[j] < x){//如果小于主元的话，就将i向前挪动一个位置，并且交换j和i所指向的数
 			i++;//挪动i,保证i是最后一个小于主元的下标
-			int temp;
-			temp = a[i];a[i]=a[j];a[j]=temp;
+			//int temp;
+			//temp = a[i];a[i]=a[j];a[j]=temp;
+			swap(a[i],a[j]);
 		}
 	}
 	//经过上面的循环之后，下标为从low到i(包括i)的数均小于x，现将主元和i+1位置上的数交换
-	a[high] = a[i+1];a[i+1]=x;//交换主元和第一个比主元大的数也就是i+1所指的
+	//a[high] = a[i+1];a[i+1]=x;//交换主元和第一个比主元大的数也就是i+1所指的
+	swap(a[high],a[i+1]);
 
 	return i+1;//i+1为交换后主元的位置
 }

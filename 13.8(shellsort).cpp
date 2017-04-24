@@ -4,7 +4,7 @@
 void shell_sort(int *a, int n){
 	int gap;
 	for(gap =3;gap > 0;gap--){
-		for(int i=0; i<gap; i++){//通过增量gap分组
+		for(int i=0; i<gap; i++){//通过增量gap分组，假设gap=3,则每隔三个距离为一组，也就是分成三组
 			for(int j=i+gap;j<n;j=j+gap){//组内进行直接插入排序
 				if(a[j] < a[j-gap]){
 					int temp = a[j];
