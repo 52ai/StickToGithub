@@ -19,7 +19,7 @@ B Play(B b){
 
 int main(int argc, char const *argv[])
 {
-	B temp = Play(5);//单个参数的构造函数如果不添加explicit 关键字，会定义一个隐含的类型转换（从参数类型转换到自己）
+	B temp=Play(5);//单个参数的构造函数如果不添加explicit 关键字，会定义一个隐含的类型转换（从参数类型转换到自己）
 
 	return 0;
 }
