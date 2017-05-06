@@ -6,7 +6,7 @@ private:
 	int value;
 public:
 	A(int n){value = n;}
-	A(A other){value = other.value;}
+	A(const A &other){value = other.value;}//复制构造函数不能传值，需要改为常量引用
 
 	void Print(){cout << value << endl;}
 };
