@@ -2,6 +2,7 @@
 //题目：如下为类型CMyString的声明，请为该类型个添加赋值运算符函数
 
 #include <iostream>
+#include <string.h>
 #include <stdio.h>
 using namespace std;
 
