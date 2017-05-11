@@ -72,10 +72,6 @@ int main(int argc, char const *argv[])
 			char x;scanf("%c",&x);line[j]=x;
 		}
 
-
-
-
-
 		/*
 		char color_in;
 
