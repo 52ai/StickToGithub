@@ -31,5 +31,19 @@
 
 ---20170516 Wayne Yu<br>
 
+新增目录LinuxProgramming[book]，主要记录Linux程序设计相关的知识：
+
+	shell
+	文件操作
+	makefile
+	gbd调试工具
+	进程和信号
+	POSIX线程
+	进程间通信（管道、信号量、共享内存、消息队列）
+	套接字网络通信
+	GTK+进行GNOME编程
+
+---20170602 Wayne Yu<br>
+
 
 
