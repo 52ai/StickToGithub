@@ -1,3 +1,4 @@
+#This is a comment for makefile
 myapp: main.o 2.o 3.o
 	gcc -o myapp main.o 2.o 3.o
 main.o: main.c a.h

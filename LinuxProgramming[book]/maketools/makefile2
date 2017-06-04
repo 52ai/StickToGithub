@@ -1,0 +1,17 @@
+#This is a comment for makefile.
+#which compiler
+CC = gcc
+#where are include files kept
+#INCLUDE = .
+#options for development
+CFLAGS = -c
+#option for release
+# CFLAGS = -O -Wall -ansi
+myapp: main.o 2.o 3.o
+	$(CC) -o myapp main.o 2.o 3.o
+main.o: main.c a.h
+	$(CC)  $(CFLAGS) main.c
+2.o: 2.c a.h b.h
+	$(CC) $(CFLAGS) 2.c
+3.o: 3.c b.h c.h
+	$(CC) $(CFLAGS) 3.c
