@@ -1,7 +1,6 @@
 #include <iostream>
-using namespace std;
 
 int main(){
-    cout << "Hello,Word!"<<endl;
+    std::cout << "Hello,Word!"<<std::endl;
     return 0;
 }
