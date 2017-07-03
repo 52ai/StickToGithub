@@ -28,7 +28,6 @@ int main(){
         cout << endl;
     }
     int i=0,j=0;
-    ++i = j++;
     cout << "i: " << i <<endl;
     cout << "j: " << j <<endl;
     return 0;
