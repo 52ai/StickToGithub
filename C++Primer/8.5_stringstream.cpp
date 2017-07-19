@@ -14,7 +14,6 @@ int main(){
     //val1=0,val2=0;
     string dump;
     input_istring >> dump >> val1 >> dump >> val2;
-
     cout  << val1 << " " << val2 << endl;
 
     string line, word;
