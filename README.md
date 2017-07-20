@@ -45,6 +45,6 @@
 	GTK+进行GNOME编程
 
 ---20170602 Wayne Yu<br>
-
+新增目录UsingRedis，主要用于记录Linux下C/C++使用hiredis库来操作Redis数据库！ ---20170720 Wayne Yu<br>
 
 
